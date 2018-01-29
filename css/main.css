@@ -1,0 +1,113 @@
+.container{
+    border: solid 1px #000;
+    height: 100%;
+    padding: 1%;
+}
+
+
+/* Log in */
+.logo{
+  width: 50vw;
+  height: 20vh;
+}
+
+
+/* Newsfeeds */
+/*header*/
+.historys {
+  display: inline-block;
+}
+.historys > img {
+  width: 12vw;
+  height: 19vh;
+  border-radius: 60%;
+}
+.left{
+  position: relative;
+  left: 10vw;
+}
+/* vertical nav*/
+.vertical-nav {
+  border: solid 1px #000;
+  height: 100%;
+}
+/* Horizontal nav*/
+.horizontal-nav{
+  border: solid 1px #000;
+  height: 8vh;
+  width: 17.2vw;
+}
+.horizontal-navbar > input {
+  width: 15vw;
+  height: 6vh;
+}
+/* News*/
+.news {
+border: solid 1px #000;
+}
+.friend-post{
+  border: solid 1px #000;
+  margin: 5%;
+}
+.friend-post > img {
+  width: 12vw;
+  height: 15vh;
+}
+h3 {
+  display: inline-block;
+}
+
+/*Profile*/
+/*nav*/
+.nav{
+  border: solid 1px #000;
+}
+.nav > a > img {
+  width: 30vw;
+  height: 12vh;
+}
+.profile-nav{
+  display: inline-block;
+  margin: 3%
+}
+/*User information*/
+.profile-information {
+  border: solid 1px #000;
+  height: 25vh;
+}
+.profile-picture  > img {
+  width: 20vw;
+  height: 20vh;
+}
+.prof-hor-nav{
+  border: solid 1px #000;
+}
+/*Agregar posts*/
+.new-posts{
+  position: relative;
+  border: solid 1px #000;
+  padding: 3%;
+  margin: 7% 0% 0% 0%;
+}
+/*Antiguos posts*/
+.post{
+  border: solid 1px #000;
+  margin: 2% 0% 0% 0%;
+}
+.post > img {
+  width: 10vw;
+  height: 10vh;
+}
+.post-img {
+  margin: 2%;
+}
+
+/*Friends*/
+.friend{
+  border: solid 1px #000;
+  margin: 4%;
+}
+
+.row-friends{
+  margin: auto;
+}

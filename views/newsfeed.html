@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- Metaviewport-->
+    <meta name="viewport" content="">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../css/main.css">
+    <title> RedLaboratorians </title>
+  </head>
+  <body>
+<section class="container hidden-lg">
+<!-- Newsfeed-->
+  <div class="newsfeed" id="newsfeed">
+    <!-- Historys-->
+    <div class="historys">
+      <img src="./../assets/images/my-profile.jpg" alt="" class="my-profile ">
+      <img src="./../assets/images/history1.jpg" alt="" class="my-profile left">
+      <img src="./../assets/images/history2.jpg" alt="" class="my-profile left">
+      <img src="./../assets/images/history3.jpg" alt="" class="my-profile left">
+      <img src="./../assets/images/history4.jpg" alt="" class="my-profile left">
+    </div>
+      <hr>
+    <!--Nav Vertical-->
+    <div class="row  col-xs-3">
+      <div class="vertical-nav">
+        <ul>
+          <li> <a href="profile.html">Paola Torres</a></li>
+          <li> RL </li>
+          <li>Conversación general</li>
+          <li> <a href="./friends.html"> AmigxsLab </a></li>
+        </ul>
+        <h6>Acceso directo</h6>
+        <ul>
+          <li> Art Bots </li>
+          <li> Repaso JS </li>
+          <li>  Tlacu-html </li>
+        </ul>
+        <h6>Eventos</h6>
+        <h6>Grupos</h6>
+        <h6>Páginas</h6>
+        <br>
+        <h6><a href="./../index.html">Cerrar sesión</a></h6>
+      </div>
+    </div>
+    <!-- Nav horizontal y Friend´s post-->
+    <div class="row ">
+      <div class="col-xs-9">
+        <!-- Nav horizontal-->
+      <div class="horizontal-nav col-xs-3">
+        <a type="button" class="btn" data-toggle="modal" data-target="#myModal1">
+          <button type="button" name="button">Compartir +</button>
+        </a>
+      </div>
+      <div class="horizontal-nav col-xs-3">
+        <h4>Mensajes</h4>
+      </div>
+      <div class="horizontal-nav col-xs-2">
+        <input type="text" name="" value="" placeholder="buscar">
+      </div>
+      <!-- Friend´s Posts-->
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="news ">
+            <div class="friend-post">
+              <img src="./../assets/images/history4.jpg" alt="">
+              <h3>Pamela Montes</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="friend-post">
+              <img src="./../assets/images/history2.jpg" alt="">
+              <h3>Luisa Morales</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal compartir-->
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="myModalLabel">El Rey de las ahogadas</h3>
+              </div>
+              <div class="modal-body">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.456115365163!2d-99.16814268552638!3d19.392688986906965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff0ce5e5e8d5%3A0xb1e07f549f7ad30c!2sEl+Rey+de+las+Ahogadas!5e0!3m2!1ses!2smx!4v1516635871866" width="550" height="200" frameborder="0" style="border:0" allowfullscreen class="img-responsive" alt="Responsive image"></iframe>
+                <h3 class="modal-sub-text">Ricas flautas ahogadas</h3>
+                <p class="col-xs-4">Av. Coyoacán #360 Col. Del Valle Del. Benito Juárez</p>
+                <p class="col-xs-6">Rango de precio $. Servicio a domicilio</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Pedir ahora</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+  </div>
+</section>
+
+
+
+    <!-- Jquery -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./../js/app.js"></script>
+  </body>
+</html>
