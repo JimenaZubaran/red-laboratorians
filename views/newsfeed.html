@@ -6,13 +6,21 @@
     <meta name="viewport" content="">
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./../css/main.css">
     <title> RedLaboratorians </title>
   </head>
   <body>
-<section class="container hidden-lg">
+<section class="container-fluid">
 <!-- Newsfeed-->
   <div class="newsfeed" id="newsfeed">
+    <!-- header-->
+    <header class="newsfeed-header">
+      <div class="newsfeed-logo col-xs-offset-3">
+        <img src="./../assets/images/logo.png" alt="" class="logo">
+      </div>
+    </header>
     <!-- Historys-->
     <div class="historys">
       <img src="./../assets/images/my-profile.jpg" alt="" class="my-profile ">
@@ -20,6 +28,7 @@
       <img src="./../assets/images/history2.jpg" alt="" class="my-profile left">
       <img src="./../assets/images/history3.jpg" alt="" class="my-profile left">
       <img src="./../assets/images/history4.jpg" alt="" class="my-profile left">
+      <img src="./../assets/images/celphone.jpg" alt="" class="my-profile left">
     </div>
       <hr>
     <!--Nav Vertical-->
@@ -48,15 +57,15 @@
     <div class="row ">
       <div class="col-xs-9">
         <!-- Nav horizontal-->
-      <div class="horizontal-nav col-xs-3">
-        <a type="button" class="btn" data-toggle="modal" data-target="#myModal1">
+      <div class="horizontal-nav col-xs-4">
+        <a type="button" class="btn" data-toggle="modal" data-target="#modal-compartir">
           <button type="button" name="button">Compartir +</button>
         </a>
       </div>
-      <div class="horizontal-nav col-xs-3">
+      <div class="horizontal-nav col-xs-4">
         <h4>Mensajes</h4>
       </div>
-      <div class="horizontal-nav col-xs-2">
+      <div class="horizontal-nav col-xs-4">
         <input type="text" name="" value="" placeholder="buscar">
       </div>
       <!-- Friend´s Posts-->
@@ -80,7 +89,7 @@
   </div>
 
     <!-- Modal compartir-->
-    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="modal-compartir" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">

@@ -1,4 +1,11 @@
-.container{
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Work Sans', sans-serif;
+
+}
+
+.container-fluid{
     border: solid 1px #000;
     height: 100%;
     padding: 1%;
@@ -7,40 +14,54 @@
 
 /* Log in */
 .logo{
-  width: 50vw;
-  height: 20vh;
+  width: 40vw;
+  height: 15vh;
 }
-
 
 /* Newsfeeds */
 /*header*/
+.newsfeed-header{
+background-color: #F6A831;
+}
+.newsfeed-logo > img{
+  text-align: center;
+}
 .historys {
   display: inline-block;
+  margin-top: 5vh;
 }
 .historys > img {
-  width: 12vw;
-  height: 19vh;
+  width: 10vw;
+  height: 15vh;
   border-radius: 60%;
+  margin-left: 3vw;
 }
 .left{
   position: relative;
-  left: 10vw;
+  left: 5vw;
 }
 /* vertical nav*/
 .vertical-nav {
   border: solid 1px #000;
-  height: 100%;
+  height: 100vh;
+  background-color: #F6A831;
+  font-size: 3vh;
 }
 /* Horizontal nav*/
 .horizontal-nav{
   border: solid 1px #000;
   height: 8vh;
-  width: 17.2vw;
+  background-color: #F6A831;
+  box-shadow: 1px 5px #b3b3b3;
 }
 .horizontal-navbar > input {
   width: 15vw;
   height: 6vh;
 }
+h6{
+  font-size: 3vh;
+}
+
 /* News*/
 .news {
 border: solid 1px #000;
@@ -107,7 +128,6 @@ h3 {
   border: solid 1px #000;
   margin: 4%;
 }
-
 .row-friends{
   margin: auto;
 }
