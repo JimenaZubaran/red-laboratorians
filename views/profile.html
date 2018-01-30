@@ -6,6 +6,7 @@
     <meta name="viewport" content="">
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="./../css/main.css">
     <title> RedLaboratorians </title>
@@ -14,14 +15,14 @@
 <section class="container-fluid">
 <!-- Newsfeed-->
   <div class="profile">
-    <div class="nav">
-      <a href="newsfeed.html"><img src="./../assets/images/logo.png" alt=""></a>
+    <div class="nav-profile">
+      <a href="newsfeed.html"><img src="./../assets/images/logo.png" class=" logo img-responsive" alt="Responsive image"></a>
       <h2 class="profile-nav"><a href="./friends.html">AmigxsLab</a></h2>
       <h2 class="profile-nav"><a href="#">Mensajes</a></h2>
     </div>
     <div class="profile-information">
       <div class="profile-picture col-xs-4">
-        <img src="./../assets/images/my-profile.jpg" alt="">
+        <img src="./../assets/images/my-profile.jpg" class="img-responsive" alt="Responsive image">
       </div>
       <div class="profile-habilities col-xs-8">
         <h3>Paola Torres</h3>
@@ -48,11 +49,12 @@
       </div>
     </div>
     <div class="new-posts">
-      <i>+</i>
-      <input type="text" name="" value="" placeholder="Agregar comentario" class="col-xs-9">
+      <i class="fa fa-plus"></i>
+      <input id="new-comment" type="text" name="" value="" placeholder="Agregar comentario" class="col-xs-9">
+      <button id="add-comment" type="submit" name="button"></button>
     </div>
     <div class="post">
-      <img src="./../assets/images/my-profile.jpg" alt="">
+      <img src="./../assets/images/my-profile.jpg" class="img-responsive" alt="Responsive image">
       <h3>Paola Torres</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>

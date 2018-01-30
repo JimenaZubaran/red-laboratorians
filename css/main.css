@@ -6,7 +6,6 @@ body{
 }
 
 .container-fluid{
-    border: solid 1px #000;
     height: 100%;
     padding: 1%;
 }
@@ -20,21 +19,19 @@ body{
 
 /* Newsfeeds */
 /*header*/
-.newsfeed-header{
-background-color: #F6A831;
+.header{
+background-color: #ede8e8;
 }
-.newsfeed-logo > img{
-  text-align: center;
-}
+
 .historys {
   display: inline-block;
   margin-top: 5vh;
 }
 .historys > img {
-  width: 10vw;
-  height: 15vh;
+  width: 12vw;
+  height: 17vh;
   border-radius: 60%;
-  margin-left: 3vw;
+  margin-left: 2vw;
 }
 .left{
   position: relative;
@@ -42,40 +39,88 @@ background-color: #F6A831;
 }
 /* vertical nav*/
 .vertical-nav {
-  border: solid 1px #000;
-  height: 100vh;
+  height: 140vh;
   background-color: #F6A831;
   font-size: 3vh;
+  padding: 5%;
+  top: 5vh;
 }
+i{
+  color: blue;
+}
+.vertical-nav >ul >li {
+  list-style: none;
+}
+
 /* Horizontal nav*/
-.horizontal-nav{
-  border: solid 1px #000;
+.horizontal-nav,
+.horizontal-nav1 {
   height: 8vh;
-  background-color: #F6A831;
   box-shadow: 1px 5px #b3b3b3;
+
 }
-.horizontal-navbar > input {
-  width: 15vw;
-  height: 6vh;
+.horizontal-nav{
+  background-color: #F6A831;
 }
+.horizontal-nav > h3 {
+  margin-top: 2vh;
+  text-align: center;
+
+}
+.horizontal-nav1{
+  background-color: #ede8e8;
+}
+.horizontal-nav1 > a > h3 {
+  margin-top: 1vh;
+}
+.horizontal-nav1 > input {
+  margin-top:1vw;
+  width: 95%;
+}
+
 h6{
   font-size: 3vh;
 }
 
-/* News*/
+/* News- posts*/
 .news {
 border: solid 1px #000;
 }
-.friend-post{
-  border: solid 1px #000;
+.post-friend{
+  border: solid 5px #ede8e8;
   margin: 5%;
+  padding: 5%;
+  text-align: justify;
 }
-.friend-post > img {
+.post-friend > img {
   width: 12vw;
   height: 15vh;
+  border-radius: 50%;
+  margin-right: 3%;
 }
 h3 {
   display: inline-block;
+  color: #000;
+}
+.post-icons{
+background-color: #ede8e8;
+padding: 2%;
+border-radius: 2vh;
+}
+.post-icons > i,
+.photo-icons > i{
+  margin: 3%;
+}
+/*Modal-compartir*/
+.modal-picture{
+  width: 14vw;
+  height: 15vh;
+  border-radius: 50%;
+  margin: 2%;
+}
+
+textarea{
+  width: 100%;
 }
 
 /*Profile*/
@@ -83,13 +128,8 @@ h3 {
 .nav{
   border: solid 1px #000;
 }
-.nav > a > img {
-  width: 30vw;
-  height: 12vh;
-}
 .profile-nav{
   display: inline-block;
-  margin: 3%
 }
 /*User information*/
 .profile-information {
@@ -123,11 +163,31 @@ h3 {
   margin: 2%;
 }
 
-/*Friends*/
-.friend{
+/*Friends and photos*/
+.friends-nav{
+  margin-top: 5vh;
+}
+.friends-nav > a,
+.photos-nav > a {
+  color: #000;
+  font-size: 5vh;
+}
+.friends-box > h2,
+.photos-box > h2{
+margin-left: 2%;
+background-color: #F6A831;
+padding: 3%;
+font-weight: 700;
+}
+.friend,
+.photo {
   border: solid 1px #000;
   margin: 4%;
+  padding-top: 2%;
+  text-align: center;
 }
-.row-friends{
-  margin: auto;
+.friend > img,
+.photo > img {
+  width: 20vw;
+  height: 30vh;
 }

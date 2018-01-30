@@ -6,8 +6,8 @@
     <meta name="viewport" content="">
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./../css/main.css">
     <title> RedLaboratorians </title>
   </head>
@@ -16,39 +16,36 @@
 <!-- Newsfeed-->
   <div class="newsfeed" id="newsfeed">
     <!-- header-->
-    <header class="newsfeed-header">
-      <div class="newsfeed-logo col-xs-offset-3">
+    <header class="header">
+      <div class="newsfeed-logo logo col-xs-offset-3">
         <img src="./../assets/images/logo.png" alt="" class="logo">
       </div>
     </header>
     <!-- Historys-->
     <div class="historys">
-      <img src="./../assets/images/my-profile.jpg" alt="" class="my-profile ">
-      <img src="./../assets/images/history1.jpg" alt="" class="my-profile left">
-      <img src="./../assets/images/history2.jpg" alt="" class="my-profile left">
-      <img src="./../assets/images/history3.jpg" alt="" class="my-profile left">
-      <img src="./../assets/images/history4.jpg" alt="" class="my-profile left">
-      <img src="./../assets/images/celphone.jpg" alt="" class="my-profile left">
+      <img src="./../assets/images/my-profile.jpg" alt="" class="">
+      <img src="./../assets/images/history1.jpg" alt="" class=" left">
+      <img src="./../assets/images/history2.jpg" alt="" class=" left">
+      <img src="./../assets/images/history3.jpg" alt="" class=" left">
+      <img src="./../assets/images/history4.jpg" alt="" class=" left">
+      <img src="./../assets/images/history5.jpg" alt="" class=" left">
     </div>
       <hr>
     <!--Nav Vertical-->
     <div class="row  col-xs-3">
       <div class="vertical-nav">
-        <ul>
-          <li> <a href="profile.html">Paola Torres</a></li>
-          <li> RL </li>
-          <li>Conversación general</li>
-          <li> <a href="./friends.html"> AmigxsLab </a></li>
-        </ul>
-        <h6>Acceso directo</h6>
-        <ul>
-          <li> Art Bots </li>
-          <li> Repaso JS </li>
-          <li>  Tlacu-html </li>
-        </ul>
-        <h6>Eventos</h6>
-        <h6>Grupos</h6>
-        <h6>Páginas</h6>
+        <h6><a href="profile.html"><i class="fa fa-user"></i></a><strong> Paola Torres</strong></h6>
+        <h6><i class="fa fa-comment"></i> Conversación general</h6>
+        <h6><a href="./friends.html"><i class="fa fa-child"></i></a> AmigxsLab</h6>
+        <br>
+        <h6><strong>Acceso directo</strong></h6>
+          <h6><i class="fa fa-laptop"></i> Art Bots </h6>
+          <h6><i class="fa fa-book"></i> Repaso JS </h6>
+          <h6><i class="fa fa-desktop"></i> Tlacu-html </h6>
+        <br>
+          <h6><i class="fa fa-calendar"></i> Eventos</h6>
+          <h6><i class="fa fa-users"></i>  Grupos</h6>
+          <h6><i class="fa fa-paper-plane-o "></i>  Páginas</h6>
         <br>
         <h6><a href="./../index.html">Cerrar sesión</a></h6>
       </div>
@@ -57,30 +54,40 @@
     <div class="row ">
       <div class="col-xs-9">
         <!-- Nav horizontal-->
-      <div class="horizontal-nav col-xs-4">
+      <div class="horizontal-nav1 col-xs-4">
         <a type="button" class="btn" data-toggle="modal" data-target="#modal-compartir">
-          <button type="button" name="button">Compartir +</button>
+          <h3>Compartir <i class="fa fa-plus"></i></h3>
         </a>
       </div>
-      <div class="horizontal-nav col-xs-4">
-        <h4>Mensajes</h4>
+      <div class="horizontal-nav col-xs-4 ">
+        <h3 class="col-xs-offset-3"> Mensajes</h3>
       </div>
-      <div class="horizontal-nav col-xs-4">
-        <input type="text" name="" value="" placeholder="buscar">
+      <div class="horizontal-nav1 col-xs-4">
+        <input type="text" name="" value="" placeholder="Buscar">
       </div>
       <!-- Friend´s Posts-->
       <div class="row">
         <div class="col-xs-12">
-          <div class="news ">
-            <div class="friend-post">
-              <img src="./../assets/images/history4.jpg" alt="">
-              <h3>Pamela Montes</h3>
+          <div class="post-news ">
+            <div class="post-friend">
+              <img src="./../assets/images/history4.jpg">
+              <h3><strong>Pamela Montes</strong></h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="post-icons">
+                <i class="fa fa-commenting-o fa-2x"></i>
+                <i class="fa fa-heart fa-2x"></i>
+                <i class="fa fa-share-alt fa-2x"></i>
+              </div>
             </div>
-            <div class="friend-post">
-              <img src="./../assets/images/history2.jpg" alt="">
-              <h3>Luisa Morales</h3>
+            <div class="post-friend">
+              <img src="./../assets/images/history2.jpg">
+              <h3><strong>Luisa Morales</strong></h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="post-icons">
+                <i class="fa fa-commenting-o fa-2x"></i>
+                <i class="fa fa-heart fa-2x"></i>
+                <i class="fa fa-share-alt fa-2x"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -93,17 +100,13 @@
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
+                <img src="./../assets/images/my-profile.jpg" class="modal-picture"alt="">
+                <h3 class="modal-title" id="myModalLabel">Hola Paola</h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="modal-title" id="myModalLabel">El Rey de las ahogadas</h3>
-              </div>
-              <div class="modal-body">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.456115365163!2d-99.16814268552638!3d19.392688986906965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff0ce5e5e8d5%3A0xb1e07f549f7ad30c!2sEl+Rey+de+las+Ahogadas!5e0!3m2!1ses!2smx!4v1516635871866" width="550" height="200" frameborder="0" style="border:0" allowfullscreen class="img-responsive" alt="Responsive image"></iframe>
-                <h3 class="modal-sub-text">Ricas flautas ahogadas</h3>
-                <p class="col-xs-4">Av. Coyoacán #360 Col. Del Valle Del. Benito Juárez</p>
-                <p class="col-xs-6">Rango de precio $. Servicio a domicilio</p>
+                <textarea name="name" rows="8" cols="80" placeholder="Agrega tu comentario"></textarea>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Pedir ahora</button>
+                <button type="button" class="btn btn-primary">Agregar</button>
               </div>
             </div>
           </div>
@@ -117,7 +120,9 @@
 
 
 
-    <!-- Jquery -->
+      <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+      <!-- Jquery -->
     <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
