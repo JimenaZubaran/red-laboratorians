@@ -13,7 +13,7 @@
   </head>
   <body>
 <section class="container-fluid">
-<!-- Newsfeed-->
+<!-- Nav-->
   <div class="profile">
     <div class="nav-profile">
       <a href="newsfeed.html"><img src="./../assets/images/logo.png" class=" logo img-responsive" alt="Responsive image"></a>
@@ -28,12 +28,13 @@
         <h3>Paola Torres</h3>
         <h4>Front-end</h4>
         <div class="profile-links">
-          <a href="#">Github</a>
+          <a href="https://github.com/">Github</a>
           <a href="#">Portafolio</a>
-          <a href="#">Linkedin</a>
+          <a href="https://mx.linkedin.com/">Linkedin</a>
         </div>
       </div>
     </div>
+    <!-- Nav horizontal-->
     <div class="profile-horizontal-nav">
       <div class="profil-publications prof-hor-nav col-xs-3">
         <h4>Publicaciones</h4>
@@ -48,37 +49,49 @@
         <h4>Blog</h4>
       </div>
     </div>
-    <div class="new-posts">
-      <i class="fa fa-plus"></i>
-      <input id="new-comment" type="text" name="" value="" placeholder="Agregar comentario" class="col-xs-9">
-      <button id="add-comment" type="submit" name="button"></button>
-    </div>
-    <div class="post">
-      <img src="./../assets/images/my-profile.jpg" class="img-responsive" alt="Responsive image">
-      <h3>Paola Torres</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
-    <div class="post">
-      <img src="./../assets/images/my-profile.jpg" alt="">
-      <h3>Paola Torres</h3>
-      <div class="post-img">
-        <p>Mis fotografías</p>
-        <img src="http://dummyimage.com/150x100" alt="">
-        <img src="http://dummyimage.com/150x100" alt="">
-        <img src="http://dummyimage.com/150x100" alt="">
-        <img src="http://dummyimage.com/150x100" alt="">
+
+    <!-- Recuadro para agregar publicaciones-->
+      <form>
+        <div class="form-group">
+          <label for="new-comment">Agregar comentario</label>
+          <input id="new-comment" type="text" class="form-control" placeholder="Agregar comentario">
+        </div>
+        <button id="add-comment" type="submit" class="btn btn-default">Agregar</button>
+      </form>
+
+    <!-- Publicaciones-->
+    <div id="new-posts">
+      <div class="post">
+        <img src="./../assets/images/my-profile.jpg" class="img-responsive" alt="Responsive image">
+        <h3>Paola Torres</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-    </div>
-    <div class="post">
-      <img src="./../assets/images/my-profile.jpg" alt="">
-      <h3>Paola Torres</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="post">
+        <img src="./../assets/images/my-profile.jpg" alt="">
+        <h3>Paola Torres</h3>
+        <div class="post-img">
+          <p>Mis fotografías</p>
+          <img src="http://dummyimage.com/150x100" alt="">
+          <img src="http://dummyimage.com/150x100" alt="">
+          <img src="http://dummyimage.com/150x100" alt="">
+          <img src="http://dummyimage.com/150x100" alt="">
+        </div>
+      </div>
+      <div class="post">
+        <img src="./../assets/images/my-profile.jpg" alt="">
+        <h3>Paola Torres</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
     </div>
   </div>
 </section>
 
 
 
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-auth.js"></script>
     <!-- Jquery -->
     <script
   src="https://code.jquery.com/jquery-3.3.1.js"

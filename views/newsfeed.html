@@ -68,7 +68,7 @@
       <!-- Friend´s Posts-->
       <div class="row">
         <div class="col-xs-12">
-          <div class="post-news ">
+          <div id="post-news">
             <div class="post-friend">
               <img src="./../assets/images/history4.jpg">
               <h3><strong>Pamela Montes</strong></h3>
@@ -96,14 +96,16 @@
   </div>
 
     <!-- Modal compartir-->
-    <div class="modal fade" id="modal-compartir" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="modal-post" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <img src="./../assets/images/my-profile.jpg" class="modal-picture"alt="">
                 <h3 class="modal-title" id="myModalLabel">Hola Paola</h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <textarea name="name" rows="8" cols="80" placeholder="Agrega tu comentario"></textarea>
+                <form class="" action="index.html" method="post">
+                  <textarea id="modal-comment" name="name" rows="8" cols="80" placeholder="Agrega tu comentario"></textarea>
+                </form>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary">Agregar</button>

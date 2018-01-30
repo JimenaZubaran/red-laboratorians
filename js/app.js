@@ -1,3 +1,4 @@
+//Autenticacion con Firebase
 var config = {
   apiKey: "AIzaSyDgEslLzmClEN53ERhCZn2pQbJC03M-KF4",
   authDomain: "redlaboratorias.firebaseapp.com",
@@ -23,6 +24,7 @@ function authentication(provider){
   var token = result.credential.accessToken;
   // The signed-in user info.
   var user = result.user;
+  window.location.href = "newsfeed.html"
   console.log(result);
   // ...
 })
@@ -42,7 +44,11 @@ function authentication(provider){
 });
 }
 
-/*Funcion para autenticar log in
+
+
+
+/*
+//Funcion para autenticar log in
 var $userNameInput = $("#username-input");
 var $passwordInput = $("#password-input");
 
@@ -61,25 +67,35 @@ if ($userNameInput.val().trim().lenght > 0 &&  $passwordInput.val().trim().lengh
   }
 }
 
-$("#add-coment").click(function(e){
+*/
+
+//Funcion para gregar comentario en perfil
+$("#add-comment").click(function(e){
   e.preventDefault();
-  var $newComment = $("#new-comment").val();
+  var newComment = $("#new-comment").val();
+
 
 
   //DOM para agregar comentario en perfil
 var $commentBox = $("<div />").addClass("comment-box");
+var $commentPicture =$ ("<img />").addClass("comment-picture")
 var $commentName = $("<h3 />");
 var $commentParagraph = $("<p />");
 
 //Agregar atributos
-$commentName.text("nombre");
-$commentParagraph.text("Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco");
+$commentPicture.attr("src", "./../assets/images/my-profile.jpg" )
+$commentName.text("Paola Torres");
+$commentParagraph.html(newComment);
 
 //Agregar párrafo
+$commentBox.append($commentPicture);
 $commentBox.append($commentName);
 $commentBox.append($commentParagraph);
 
 //Agregar al área de posts
-$("#")
-})
-*/
+$("#new-posts").prepend($commentBox);
+});
+
+
+
+$(document).ready();
