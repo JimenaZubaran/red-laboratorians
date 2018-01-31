@@ -30,7 +30,7 @@ Chrome, Safari, Internet explorer...
 ```
 
 ### <RedLaboratorians>
-Sketch
+
 ![Log in](./assets/images/1.jpg)
 ![Newsfeed](./assets/images/2.jpg)
 ![Profile](./assets/images/3.jpg)
