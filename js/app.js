@@ -24,7 +24,7 @@ function authentication(provider){
   var token = result.credential.accessToken;
   // The signed-in user info.
   var user = result.user;
-  window.location.href = "newsfeed.html"
+  //window.location.href = "./views/newsfeed.html"
   console.log(result);
   // ...
 })
@@ -47,27 +47,6 @@ function authentication(provider){
 
 
 
-/*
-//Funcion para autenticar log in
-var $userNameInput = $("#username-input");
-var $passwordInput = $("#password-input");
-
-function loadPage(){
-  $userNameInput.keyup(validateUser);
-  $passwordInput.keyup(validateUser);
-}
-
-function validateUser (){
-var $logInButton = $("#login-button");
-
-if ($userNameInput.val().trim().lenght > 0 &&  $passwordInput.val().trim().lenght > 0) {
-  $logInButton.removeAttr("disabled");
-  } else {
-    $logInButton.attr("disabled", true);
-  }
-}
-
-*/
 
 //Funcion para gregar comentario en perfil
 $("#add-comment").click(function(e){
@@ -81,19 +60,64 @@ var $commentBox = $("<div />").addClass("comment-box");
 var $commentPicture =$ ("<img />").addClass("comment-picture")
 var $commentName = $("<h3 />");
 var $commentParagraph = $("<p />");
+var $commentIcon = $("<i />").addClass("fa fa-heart comment-icons");
+var $commentInput = $("<input/>").addClass("comment-input");
+var $commentButton = $("<button/>")
+
 
 //Agregar atributos
 $commentPicture.attr("src", "./../assets/images/my-profile.jpg" )
 $commentName.text("Paola Torres");
 $commentParagraph.html(newComment);
+$commentInput.attr("placeholder", "Escribe un comentario");
+$commentButton.attr("id", "comment-add");
+$commentButton.html("Agregar");
 
 //Agregar párrafo
 $commentBox.append($commentPicture);
 $commentBox.append($commentName);
 $commentBox.append($commentParagraph);
+$commentBox.append($commentIcon);
+$commentBox.append($commentInput);
+$commentBox.append($commentButton);
 
 //Agregar al área de posts
 $("#new-posts").prepend($commentBox);
+
+
+  $("#comment-add").click(function(e){
+    e.preventDefault();
+    var commentInput = $(".comment-input").val();
+
+    //DOM para agregar comentario en en el post
+    var $commentsBox = $("<div />").addClass("comments-box");
+    var $commentsPicture =$ ("<img />").addClass("comments-picture")
+    var $commentsName = $("<h3 />");
+    var $commentsParagraph = $("<p />");
+    //var $commentsIcon = $("<i />").addClass("fa fa-heart, comments-icons");
+    var $commentsInput = $("<input/>").addClass("commenst-input");
+    var $commentsButton = $("<button/>")
+
+    //Agregar atributos
+    $commentsPicture.attr("src", "./../assets/images/friend7.jpg" )
+    $commentsName.text("Valentina Sánchez");
+    $commentsParagraph.html(commentInput);
+    $commentsInput.attr("placeholder", "Escribe un comentario");
+    $commentsButton.attr("id", "comments-add");
+    $commentsButton.html("Agregar");
+
+    //Agregar párrafo
+    $commentsBox.append($commentsPicture);
+    $commentsBox.append($commentsName);
+    $commentsBox.append($commentsParagraph);
+    //$commentsBox.append($commentsIcon);
+    $commentsBox.append($commentsInput);
+    $commentsBox.append($commentsButton);
+
+
+    //Agregar al área de posts
+    $(".comment-box").append($commentsBox);
+  });
 });
 
 

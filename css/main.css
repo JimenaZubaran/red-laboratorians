@@ -6,30 +6,38 @@ body{
 }
 
 .container-fluid{
-    height: 100%;
-    padding: 1%;
+  height: 100%;
+  padding: 1%;
 }
 
 
 /* Log in */
 .logo{
-  width: 40vw;
-  height: 15vh;
+  width: 43vw;
+  height: 13vh;
+  display: inline-block;
 }
+.form-group > button{
+  margin:2%;
+}
+
+
+
 
 /* Newsfeeds */
-/*header*/
-.header{
-background-color: #ede8e8;
+/*header */
+.header,
+.nav-profile{
+background-color: #ffc107;
+box-shadow: 5px 5px #ede8e8;
+margin-bottom: 2%;
 }
-
 .historys {
-  display: inline-block;
   margin-top: 5vh;
 }
 .historys > img {
-  width: 12vw;
-  height: 17vh;
+  width: 13vw;
+  height: 16vh;
   border-radius: 60%;
   margin-left: 2vw;
 }
@@ -39,57 +47,47 @@ background-color: #ede8e8;
 }
 /* vertical nav*/
 .vertical-nav {
+  border: solid 3px #bfbfbf;
   height: 140vh;
-  background-color: #F6A831;
-  font-size: 3vh;
+  background-color: #e0e0e0;
   padding: 5%;
   top: 5vh;
+  box-shadow: 5px 5px #ede8e8;
+  border-radius: 2vh;
 }
 i{
-  color: blue;
+  color: #707070;
 }
 .vertical-nav >ul >li {
   list-style: none;
 }
-
 /* Horizontal nav*/
-.horizontal-nav,
-.horizontal-nav1 {
-  height: 8vh;
-  box-shadow: 1px 5px #b3b3b3;
-
+.horizontal-nav {
+  height: 20vh;
+  background-color: #e0e0e0;
+  border: solid 3px #bfbfbf;
+  border-radius: 2vh;
+  padding: 1vw;
+  font-size: 4vh;
 }
-.horizontal-nav{
-  background-color: #F6A831;
-}
-.horizontal-nav > h3 {
-  margin-top: 2vh;
-  text-align: center;
-
-}
-.horizontal-nav1{
-  background-color: #ede8e8;
-}
-.horizontal-nav1 > a > h3 {
-  margin-top: 1vh;
-}
-.horizontal-nav1 > input {
-  margin-top:1vw;
-  width: 95%;
-}
-
 h6{
   font-size: 3vh;
 }
-
-/* Post-ews*/
-.post-friend{
-  border: solid 5px #ede8e8;
+/*News-post*/
+.comment-box,
+.comments-box,
+.commentt-box{
+  border: solid 6px #ede8e8;
   margin: 5%;
   padding: 5%;
   text-align: justify;
+  border-radius: 2vh;
 }
-.post-friend > img {
+.comment-box > input {
+  width: 50%;
+}
+.comment-picture,
+.comments-picture {
   width: 12vw;
   height: 15vh;
   border-radius: 50%;
@@ -99,46 +97,51 @@ h3 {
   display: inline-block;
   color: #000;
 }
-.post-icons{
+.comment-icons,
+.comments-icons{
 background-color: #ede8e8;
 padding: 2%;
 border-radius: 2vh;
+margin-left: 2%;
 }
 .post-icons > i,
 .photo-icons > i{
   margin: 3%;
 }
-/*Modal-compartir*/
-.modal-picture{
-  width: 14vw;
-  height: 15vh;
-  border-radius: 50%;
-  margin: 2%;
-}
 
-textarea{
-  width: 100%;
-}
 
 /*Profile*/
 /*nav*/
-.nav{
-  border: solid 1px #000;
+.nav-profile{
+margin: 2%;
 }
 .profile-nav{
   display: inline-block;
+  position: relative;
+  margin-left: 6%;
+}
+.profile-nav > a{
+  font-size: 4vh;
+  color: #000;
 }
 /*User information*/
 .profile-information {
-  border: solid 1px #000;
-  height: 25vh;
+  height: 35vh;
 }
 .profile-picture  > img {
-  width: 20vw;
-  height: 20vh;
+  width: 30vw;
+  height: 30vh;
 }
 .prof-hor-nav{
-  border: solid 1px #000;
+  height: 10vh;
+  background-color: #e0e0e0;
+  border: solid 3px #bfbfbf;
+  border-radius: 2vh;
+  margin-bottom: 2%;
+}
+.prof-hor-nav > h4 {
+  font-size: 3vh;
+  text-align: center;
 }
 /*Agregar posts*/
 .new-posts{
@@ -152,18 +155,15 @@ textarea{
   width: 20vw;
   height: 20vh;
 }
-/*Antiguos posts*/
-.post{
+.comments-picture {
+  width: 15vw;
+  height: 15vh;
+}
+.comment-box,
+.comments-box{
   border: solid 1px #000;
-  margin: 2% 0% 0% 0%;
 }
-.post > img {
-  width: 10vw;
-  height: 10vh;
-}
-.post-img {
-  margin: 2%;
-}
+
 
 /*Friends and photos*/
 .friends-nav{
@@ -177,9 +177,10 @@ textarea{
 .friends-box > h2,
 .photos-box > h2{
 margin-left: 2%;
-background-color: #F6A831;
+background-color: #ffc107;
 padding: 3%;
 font-weight: 700;
+border-radius: 2vh;
 }
 .friend,
 .photo {
@@ -191,5 +192,5 @@ font-weight: 700;
 .friend > img,
 .photo > img {
   width: 20vw;
-  height: 30vh;
+  height: 20vh;
 }

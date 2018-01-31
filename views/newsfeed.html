@@ -35,13 +35,13 @@
     <div class="row  col-xs-3">
       <div class="vertical-nav">
         <h6><a href="profile.html"><i class="fa fa-user"></i></a><strong> Paola Torres</strong></h6>
-        <h6><i class="fa fa-comment"></i> Conversación general</h6>
+        <h6><i class="fa fa-comment"></i> Chat</h6>
         <h6><a href="./friends.html"><i class="fa fa-child"></i></a> AmigxsLab</h6>
         <br>
         <h6><strong>Acceso directo</strong></h6>
           <h6><i class="fa fa-laptop"></i> Art Bots </h6>
           <h6><i class="fa fa-book"></i> Repaso JS </h6>
-          <h6><i class="fa fa-desktop"></i> Tlacu-html </h6>
+          <h6><i class="fa fa-desktop"></i> Tlacu</h6>
         <br>
           <h6><i class="fa fa-calendar"></i> Eventos</h6>
           <h6><i class="fa fa-users"></i>  Grupos</h6>
@@ -54,69 +54,59 @@
     <div class="row ">
       <div class="col-xs-9">
         <!-- Nav horizontal-->
-      <div class="horizontal-nav1 col-xs-4">
-        <a type="button" class="btn" data-toggle="modal" data-target="#modal-compartir">
-          <h3>Compartir <i class="fa fa-plus"></i></h3>
-        </a>
-      </div>
-      <div class="horizontal-nav col-xs-4 ">
-        <h3 class="col-xs-offset-3"> Mensajes</h3>
-      </div>
-      <div class="horizontal-nav1 col-xs-4">
-        <input type="text" name="" value="" placeholder="Buscar">
-      </div>
+        <form>
+          <div class="horizontal-nav">
+            <label class="col-xs-9">Agregar publicación</label>
+            <input id="new-comment" type="text" class="form-control col-xs-11" placeholder="Agregar comentario">
+            <button id="add-comment" type="submit" class="btn btn-default">Agregar</button>
+          </div>
+        </form>
+
       <!-- Friend´s Posts-->
-      <div class="row">
-        <div class="col-xs-12">
-          <div id="post-news">
-            <div class="post-friend">
-              <img src="./../assets/images/history4.jpg">
-              <h3><strong>Pamela Montes</strong></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <div class="post-icons">
-                <i class="fa fa-commenting-o fa-2x"></i>
-                <i class="fa fa-heart fa-2x"></i>
-                <i class="fa fa-share-alt fa-2x"></i>
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="new-posts">
+              <div class="commentt-box">
+                <img src="./../assets/images/history4.jpg" class="comment-picture">
+                <h3><strong><a href="./friend1.html">Bárbara Estrada</a></strong></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <!-- Add comment to Friend´s Posts-->
+                <div class="commentt-box">
+                  <label class="col-xs-9">Agregar comentario</label>
+                  <input class="comment-input" type="text" name="" value="" placeholder="comentario">
+                  <i class="fa fa-heart comment-icons"></i>
+                  <button id="comment-add" class="btn btn-default" type="submit">Agregar</button>
+                </div>
               </div>
-            </div>
-            <div class="post-friend">
-              <img src="./../assets/images/history2.jpg">
-              <h3><strong>Luisa Morales</strong></h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <div class="post-icons">
-                <i class="fa fa-commenting-o fa-2x"></i>
-                <i class="fa fa-heart fa-2x"></i>
-                <i class="fa fa-share-alt fa-2x"></i>
+              <div class="commentt-box">
+                <img src="./../assets/images/history2.jpg" class="comment-picture">
+                <h3><strong><a href="./friend2.html">Luisa Morales</a></strong></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <!-- Add comment to Friend´s Posts-->
+                <div class="commentt-box">
+                  <label class="col-xs-9">Agregar comentario</label>
+                  <input class="comment-input" type="text" name="" value="" placeholder="comentario">
+                  <i class="fa fa-heart comment-icons"></i>
+                  <button id="comment-add" class="btn btn-default" type="submit">Agregar</button>
+                </div>
+              </div>
+              <div class="commentt-box">
+                <img src="./../assets/images/history3.jpg" class="comment-picture">
+                <h3><strong><a href="./friend3.html">Beatriz Nuñó</a></strong></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <!-- Add comment to Friend´s Posts-->
+                <div class="commentt-box">
+                  <label class="col-xs-9">Agregar comentario</label>
+                  <input class="comment-input" type="text" name="" value="" placeholder="comentario">
+                  <i class="fa fa-heart comment-icons"></i>
+                  <button id="comment-add" class="btn btn-default" type="submit">Agregar</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-    <!-- Modal compartir-->
-    <div class="modal fade" id="modal-post" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <img src="./../assets/images/my-profile.jpg" class="modal-picture"alt="">
-                <h3 class="modal-title" id="myModalLabel">Hola Paola</h3>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <form class="" action="index.html" method="post">
-                  <textarea id="modal-comment" name="name" rows="8" cols="80" placeholder="Agrega tu comentario"></textarea>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Agregar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
   </div>
 </section>
 
