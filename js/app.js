@@ -9,7 +9,8 @@ var config = {
 };
 firebase.initializeApp(config);
 
-$("#login-button").click(function(){
+$("#login-button").click(function(e){
+  e.preventDefault();
   authGoogle();
 })
 
@@ -24,7 +25,7 @@ function authentication(provider){
   var token = result.credential.accessToken;
   // The signed-in user info.
   var user = result.user;
-  //window.location.href = "./views/newsfeed.html"
+  window.location.href = "views/newsfeed.html"
   console.log(result);
   // ...
 })
