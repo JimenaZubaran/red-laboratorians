@@ -36,26 +36,40 @@ Chrome, Safari, Internet explorer...
 ```
 
 ### <RedLaboratorians>
+```
 Sketch para elaboración de producto
+```
 ![Log in](./assets/images/1.jpg)
 ![Newsfeed](./assets/images/2.jpg)
 ![Profile](./assets/images/3.jpg)
 ![Photos](./assets/images/4.jpg)
 ![Friends](./assets/images/5.jpg)
 
-###Producto final
-####Log in
+### Producto final
+```
+Log in
+```
 ![Log in](./assets/images/6.PNG)
-####News feed
+```
+News feed
+```
 ![News feed](./assets/images/7.PNG)
-####Profile
-![Profile](./assets/images/8.JPG)
-####Photos
-![Photos](./assets/images/11.JPG)
-####Friends
-![Friends](./assets/images/9.JPG)
-####Profile´s friend
-![Friends](./assets/images/10.JPG)
+```
+Profile
+```
+![Profile](./assets/images/8.PNG)
+```
+Photos
+```
+![Photos](./assets/images/11.PNG)
+```
+Friends
+```
+![Friends](./assets/images/9.PNG)
+```
+Profile´s friend
+```
+![Friends](./assets/images/10.PNG)
 
 
 ## < l a b o r a t o r i a >
