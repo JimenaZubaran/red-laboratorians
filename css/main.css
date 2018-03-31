@@ -1,7 +1,7 @@
 body{
   margin: 0px;
   padding: 0px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -13,12 +13,23 @@ body{
 
 /* Log in */
 .logo{
-  width: 43vw;
-  height: 13vh;
   display: inline-block;
+}
+form {
+  margin: 1%;
+  font-size: 2vh;
+}
+.form-group > h4 {
+  font-size: 2vh;
+}
+
+.form-control{
+padding: 4%;
+font-size: 2vh;
 }
 .form-group > button{
   margin:2%;
+  font-size: 2vh;
 }
 
 
@@ -33,17 +44,19 @@ box-shadow: 5px 5px #ede8e8;
 margin-bottom: 2%;
 }
 .historys {
-  margin-top: 5vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 .historys > img {
-  width: 13vw;
-  height: 16vh;
-  border-radius: 60%;
-  margin-left: 2vw;
+  width: 15%;
+  height: 30%;
+  border-radius: 50%;
+  display: inline;
 }
 .left{
   position: relative;
-  left: 5vw;
+  left: 7vw;
+  margin-left: 2vw;
 }
 /* vertical nav*/
 .vertical-nav {
@@ -53,26 +66,28 @@ margin-bottom: 2%;
   padding: 5%;
   top: 5vh;
   box-shadow: 5px 5px #ede8e8;
-  border-radius: 2vh;
+  border-radius: 2v;
+  font-size: 2vh;
+  margin-top: 3%;
 }
+
 i{
   color: #707070;
 }
-.vertical-nav >ul >li {
-  list-style: none;
+a{
+  color: #000
 }
+
+
 /* Horizontal nav*/
 .horizontal-nav {
-  height: 20vh;
   background-color: #e0e0e0;
   border: solid 3px #bfbfbf;
   border-radius: 2vh;
   padding: 1vw;
-  font-size: 4vh;
+  font-size: 2vh;
 }
-h6{
-  font-size: 3vh;
-}
+
 /*News-post*/
 .comment-box,
 .comments-box,
@@ -88,11 +103,18 @@ h6{
 }
 .comment-picture,
 .comments-picture {
-  width: 12vw;
-  height: 15vh;
-  border-radius: 50%;
   margin-right: 3%;
+  display: inline;
+  width: 20%;
+  border-radius: 50%;
 }
+.comment-picture > img,
+.comments-picture > img{
+  border-radius: 50%;
+  width: 30%;
+}
+
+
 h3 {
   display: inline-block;
   color: #000;
@@ -121,28 +143,25 @@ margin: 2%;
   margin-left: 6%;
 }
 .profile-nav > a{
-  font-size: 4vh;
+  font-size: 3vh;
   color: #000;
+  font-weight: 700;
 }
 /*User information*/
-.profile-information {
-  height: 35vh;
-}
-.profile-picture  > img {
-  width: 30vw;
-  height: 30vh;
+.profile-picture > div > img {
+  width: 85%;
 }
 .prof-hor-nav{
-  height: 10vh;
   background-color: #e0e0e0;
   border: solid 3px #bfbfbf;
   border-radius: 2vh;
   margin-bottom: 2%;
 }
 .prof-hor-nav > h4 {
-  font-size: 3vh;
   text-align: center;
 }
+
+
 /*Agregar posts*/
 .new-posts{
   position: relative;
@@ -151,28 +170,19 @@ margin: 2%;
   margin: 7% 0% 0% 0%;
 }
 /*new post*/
-.comment-picture{
-  width: 20vw;
-  height: 20vh;
-}
-.comments-picture {
-  width: 15vw;
-  height: 15vh;
-}
 .comment-box,
 .comments-box{
-  border: solid 1px #000;
+  border: solid 6px #ede8e8;
 }
 
 
 /*Friends and photos*/
-.friends-nav{
-  margin-top: 5vh;
-}
+
 .friends-nav > a,
 .photos-nav > a {
   color: #000;
-  font-size: 5vh;
+  font-size: 3vh;
+  font-weight: 700;
 }
 .friends-box > h2,
 .photos-box > h2{
@@ -184,6 +194,8 @@ border-radius: 2vh;
 }
 .friend,
 .photo {
+  width: 23%;
+  height: 23%;
   border: solid 1px #000;
   margin: 4%;
   padding-top: 2%;
@@ -191,6 +203,6 @@ border-radius: 2vh;
 }
 .friend > img,
 .photo > img {
-  width: 20vw;
-  height: 20vh;
+  width: 80%;
+  height: 80%;
 }

@@ -58,7 +58,7 @@ $("#add-comment").click(function(e){
 
   //DOM para agregar comentario en perfil
 var $commentBox = $("<div />").addClass("comment-box");
-var $commentPicture =$ ("<img />").addClass("comment-picture")
+var $commentPicture =$ ("<img />").addClass("comment-picture img-responsive")
 var $commentName = $("<h3 />");
 var $commentParagraph = $("<p />");
 var $commentIcon = $("<i />").addClass("fa fa-heart comment-icons");
@@ -92,7 +92,7 @@ $("#new-posts").prepend($commentBox);
 
     //DOM para agregar comentario en en el post
     var $commentsBox = $("<div />").addClass("comments-box");
-    var $commentsPicture =$ ("<img />").addClass("comments-picture")
+    var $commentsPicture =$ ("<img />").addClass("comments-picture img-responsive")
     var $commentsName = $("<h3 />");
     var $commentsParagraph = $("<p />");
     //var $commentsIcon = $("<i />").addClass("fa fa-heart, comments-icons");
